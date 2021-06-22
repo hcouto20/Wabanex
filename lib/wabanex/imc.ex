@@ -30,5 +30,3 @@ defmodule Wabanex.IMC do
   defp calculate_imc([name, height, weight]), do: {name, weight / (height * height)}
 end
 
-#together aula 1
-#
