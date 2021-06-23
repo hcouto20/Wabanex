@@ -32,7 +32,3 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 
  - Dado um usuário, retorna qual é o treino atual baseado na data de hoje ou nulo
 
- Códigos aulas
- #together aula 1
- #unidade aula 2
- #embuscadeevolucao aula 3
