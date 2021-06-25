@@ -1,5 +1,5 @@
 defmodule WabanexWeb.Schema do
-  # A agregação de tudo que foi feito anteriormente
+
   use Absinthe.Schema
 
   import_types WabanexWeb.Schema.Types.Root

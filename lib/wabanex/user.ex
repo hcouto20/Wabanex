@@ -1,19 +1,19 @@
 defmodule Wabanex.User do
-  # injeta código no módulo
   use Ecto.Schema
-
-  # importação funções do changeset
   import Ecto.Changeset
 
-  # tupla
+  alias Wabanex.Training
+
   @primary_key {:id, :binary_id, autogenerate: true}
-  # lista
-  @fields [:email, :name, :password]
+
+  @fields [:email, :password, :name]
 
   schema "users" do
     field :email, :string
     field :name, :string
     field :password, :string
+
+    has_one :training, Training
 
     timestamps()
   end
