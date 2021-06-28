@@ -74,6 +74,7 @@ defmodule WabanexWeb.SchemaTest do
           name: "Caique",
           email: "caique@live.com",
           password: "123456"}){
+          id
           name
         }
       }
@@ -84,8 +85,7 @@ defmodule WabanexWeb.SchemaTest do
         |> post("/api/graphql", %{query: mutation})
         |> json_response(:ok)
 
-      expected_response = %{"data" => %{"createUser" => %{"name" => "Caique"}}}
-      assert response == expected_response
+      assert %{"data" => %{"createUser" => %{"name" => "Caique", "id" => _id}}} = response
     end
   end
 end
